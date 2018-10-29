@@ -1,0 +1,317 @@
+{% extends 'assist/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="w3-container" style="margin-top:80px" id="showcase">
+                <h1 class="w3-jumbo">Help Them</h1>
+                <h1 class="w3-xxxlarge w3-text-red">Showcase.</h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+            </div>
+
+            <div id="main">
+                <h1>
+                    <a name="homeSubmenu">The Actual Home Page</a>
+                </h1>
+
+                <div class="w3-row-padding">
+                    <div class="w3-half">
+                      <img class="header-img" src="{% static 'images/man2.png' %}" style="width:100%">
+                      <img class="header-img" src="{% static 'images/couples.png' %}" style="width:100%">
+                      <img class="header-img" src="{% static 'images/man.png' %}" style="width:100%">
+                    </div>
+
+                    <div class="w3-half">
+                      <img class="header-img" src="{% static 'images/blackold.png' %}" style="width:100%">
+                      <img class="header-img" src="{% static 'images/otherstuff.png' %}" style="width:100%">
+                      <img class="header-img" src="{% static 'images/woman.png' %}" style="width:100%">
+                    </div>
+                </div>
+
+
+                <h2>
+                    <a name="sub1">Sub Section 1</a>
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Praesent elementum facilisis leo vel. Risus pretium quam vulputate dignissim suspendisse in est. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Ultricies lacus sed turpis tincidunt id aliquet risus. Ultricies mi eget mauris pharetra et. Est sit amet facilisis magna etiam. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Molestie at elementum eu facilisis. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Rutrum quisque non tellus orci ac auctor augue mauris augue. Dui nunc mattis enim ut tellus elementum sagittis. In arcu cursus euismod quis viverra nibh cras. Natoque penatibus et magnis dis parturient. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. </p>
+
+                <h2><a name="sub2">Sub Section 2</a></h2>
+                <p>Nullam vehicula ipsum a arcu cursus vitae. Pulvinar elementum integer enim neque. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Ultrices tincidunt arcu non sodales. Fermentum dui faucibus in ornare quam viverra. Odio ut enim blandit volutpat maecenas volutpat. Ultricies lacus sed turpis tincidunt. Sed nisi lacus sed viverra tellus. Consequat ac felis donec et odio pellentesque. Ac turpis egestas sed tempus urna et pharetra. Id consectetur purus ut faucibus. Feugiat nisl pretium fusce id velit ut tortor pretium. Tincidunt lobortis feugiat vivamus at. Sit amet venenatis urna cursus eget nunc. Lobortis mattis aliquam faucibus purus in. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Libero volutpat sed cras ornare. </p>
+            </div>
+
+              <!-- Services -->
+            <div class="w3-container" id="services" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-red">Sections</h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+                <p>
+                    <button onclick ="myFunction()" class="w3-xlarge w3-text-blue w3-button w3-hover-black"> 
+                        <b>Care</b>
+                    </button>
+                </p>
+
+                <div id="myDIV"></div>
+
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementById("myDIV");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>When Does Someone Need Care</p></b></li><li><p><b>Basic Caregiving</p></b></li><li><p><b>Home Safety</p></b></li><li><p><b>In-Home Care At All Levels</p></b></li><li><p><b>Equipment At All Stages Of Care</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+
+                        <p>
+                            <button onclick = "myFunction2()" class="w3-xlarge w3-text-blue w3-button w3-hover-black"> 
+                                <b>Legal</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV2"></div>
+
+                        <script>
+                            function myFunction2() {
+                                var x = document.getElementById("myDIV2");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Wills & Trusts; Hiring an attorney</p></b></li><li><p><b>Power of attorney (medical/finance)</p></b></li><li><p><b>Legal rights; what can a relative do and not do?</p></b></li><li><p><b>Advance directive for health care</p></b></li><li><p><b>Abuse - physical and financial</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+                        <p>
+                            <button onclick = "myFunction3()" class="w3-xlarge w3-text-blue w3-button w3-hover-black">
+                                <b>Finances</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV3"></div>
+
+                        <script>
+                            function myFunction3() {
+                                var x = document.getElementById("myDIV3");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>What can you afford</p></b></li><li><p><b>Financial advisors</p></b></li><li><p><b>Adjusting finances as care changes</p></b></li><li><p><b>Medicare/Medicaid</p></b></li><li><p><b>Health insurance</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+
+                        <p>
+                            <button onclick = "myFunction4()" class="w3-xlarge w3-text-blue w3-button w3-hover-black">
+                                <b>Services/ Resources</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV4"></div>
+
+                        <script>
+                            function myFunction4() {
+                                var x = document.getElementById("myDIV4");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Private</p></b></li><li><p><b>Government</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+                        <p>
+                            <button onclick = "myFunction5()" class="w3-xlarge w3-text-blue w3-button w3-hover-black">
+                                <b>Housing Options</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV5"></div>
+
+                        <script>
+                            function myFunction5() {
+                                var x = document.getElementById("myDIV5");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Types of residential/care facilites</p></b></li><li><p><b>Changes in living environment</p></b></li><li><p><b>Aging in place/home modification</p></b></li><li><p><b>Senior right to choose (reference finances, legal, memory)</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+
+                        <p>
+                            <button onclick = "myFunction6()" class="w3-xlarge w3-text-blue w3-button w3-hover-black">
+                                <b>Medical/Science</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV6"></div>
+
+                        <script>
+                            function myFunction6() {
+                                var x = document.getElementById("myDIV6");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Doctors and talking with the doctor</p></b></li><ul><li><p><b>What Questions to ask</p></b></li></ul><li><p><b>Interpreter for health care (ethnic)</p></b></li><li><p><b>Diseases (general summary with links)</p></b></li><li><p><b>Prescriptions (geriatric pharmacist)</p></b></li><li><p><b>Etiology (chronic vs acute illness)</p></b></li><li><p><b>Memory (dementia vs cognitively intact) (general summary with links)</p></b></li></ul></ul>";
+                                } else{
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+
+                        <p>
+                            <button onclick = "myFunction7()" class="w3-xlarge w3-text-blue w3-button w3-hover-black"> 
+                                <b>Death & Dying</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV7"></div>
+
+                        <script>
+                            function myFunction7() {
+                                var x = document.getElementById("myDIV7");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Hospice</p></b></li><li><p><b>Loss of spouse, Widowhood/Widower</p></b></li><li><p><b>Funeral arrangements</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+
+                        <p>
+                            <button onclick = "myFunction8()" class="w3-xlarge w3-text-blue w3-button w3-hover-black"> 
+                                <b>Caregiver Health</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV8"></div>
+
+                        <script>
+                            function myFunction8() {
+                                var x = document.getElementById("myDIV8");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Bill of Rights</p></b></li><li><p><b>Know your limits</p></b></li><li><p><b>Boundaries</p></b></li><li><p><b>Respite care</p></b></li><li><p><b>Emotion / Stress</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+                        <p>
+                            <button onclick = "myFunction9()"p class="w3-xlarge w3-text-blue w3-button w3-hover-black"> 
+                                <b>Normal Aging</b>
+                            </button>
+                        </p>
+
+                <div id="myDIV9"></div>
+
+                        <script>
+                            function myFunction9() {
+                                var x = document.getElementById("myDIV9");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Biology of aging (general slowing), adapting to aging flexible attitude, humor</p></b></li><li><p><b>Nutrition</p></b></li><li><p><b>Leisure/Hobbies, Socializing, Exercise, Travel</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+                        <p>
+                            <button onclick = "myFunction10()" class="w3-xlarge w3-text-blue w3-button w3-hover-black"> 
+                                <b>Technology</b>
+                            </button>
+                        </p>
+                <div id="myDIV10"></div>
+                        <script>
+                            function myFunction10() {
+                                var x = document.getElementById("myDIV10");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Computers/email</p></b></li><li><p><b>Cell phone/Txt</p></b></li><li><p><b>Internet</p></b></li><li><p><b>Use technology to connect to your doctor</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+
+                            <p>
+                                <button onclick = "myFunction11()" class="w3-xlarge w3-text-blue w3-button w3-hover-black">
+                                    <b>Special Topics / Miscellaneous</b>
+                                </button>
+                            </p>
+                <div id="myDIV11"></div>
+                        <script>
+                            function myFunction11() {
+                                var x = document.getElementById("myDIV11");
+                                if (x.innerHTML === "") {
+                                    x.innerHTML = "<ul><ul><li><p><b>Age Bias Ageism</p></b></li><li><p><b>Grandparenting and Becoming Parents Again</p></b></li><li><p><b>Crime/Elderly Criminals / Elderly Prisoners</p></b></li><li><p><b>Health Insurance</p></b></li><li><p><b>State-Specific medical assistance (medical etc.)</p></b></li><li><p><b>Men as Caregivers</p></b></li><li><p><b>Long-Distance Caregiving</p></b></li><li><p><b>Multi-Generational Living</p></b></li><li><p><b>Abuse</p></b></li><li><p><b>Probate</p></b></li><li><p><b>Alcohol/Drug Abuse</p></b></li><li><p><b>AIDS( STDs)</p></b></li><li><p><b>Transportation, Loss of driver’s license (legal, Doctor order)</p></b></li><li><p><b>Relationships/Remarrying, Sex (ref AIDs)</p></b></li><li><p><b>Psychology (depression/suicide), Sociology, Independence</p></b></li><li><p><b>Retirement, Employment/Job Training</p></b></li><li><p><b>Pets</p></b></li><li><p><b>Ethnic Diversity in Aging</p></b></li><li><p><b>Educational Opportunities</p></b></li><li><p><b>LGBT</p></b></li><li><p><b>Self-Driving Cars</p></b></li><li><p><b>Intergenerational</p></b></li></ul></ul>";
+                                } else {
+                                    x.innerHTML = "";
+                                }
+                            }
+                        </script>
+            </div>
+              
+
+            <!-- Designers -->
+            <div class="w3-container" id="designers" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-red">
+                    About Us
+                </h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+                <p>This website was created with a simple goal in mind, to answer the basic questions someone may have upon Caregiving.
+              Research represented in the following pages has been conducted by California State University of Sacramento Professor of Gerontology, Sal Arrigo.
+              Web development team, CareGivers, that conducted  this website are Thomas Duong, Victor Tram,Jeremiah Cabuago,Jeremy Albright, Warsame Jirde, Nagvit Bhandal, and Amritpal Atwal</p>
+            
+                <p><b>Our designers are thoughtfully chosen</b>:</p>
+            </div>
+
+            <!-- The Team -->
+            <div class="w3-row-padding w3-grayscale w3-medium">
+                <div class="w3-col m4 w3-margin-bottom" >
+                    <div class="w3-light-grey">
+                    <!--<img src="/w3images/team2.jpg" alt="Jeremy" style="width:100%"> -->
+                        <a href = "https://www.csus.edu/hhs/rpta/faculty/arrigo.html" > 
+                            <img src ="{% static 'images/sal.png' %}" width = "40%" alt = "">
+                        </a>
+                        <div class="w3-container">
+                            <h3>Mr. Sal Arrigo</h3>
+                            <p class="w3-opacity">Educator</p>
+                            <p>Idea Man</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <div class="w3-container">
+                            <h3>Group Members</h3>
+                            <p class="w3-opacity">Somebody</p>
+                            <p>Blah blah blah </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <div class="w3-container">
+                            <h3>Group Members</h3>
+                            <p class="w3-opacity">somebody</p>
+                            <p>Blah blah blah </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="w3-panel w3-padding-32 w3-card-4 w3-light-grey w3-center w3-opacity">
+                <p>
+                    <nav>
+                        <a href="WireFrame.html" target="WireFrame.html">Home</a> |
+                        <a href="Frame1.html" target="_top">Next Page</a>
+                    </nav>
+                </p>
+            </footer>
+
+{% endblock %}

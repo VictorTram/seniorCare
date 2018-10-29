@@ -1,0 +1,17 @@
+{% extends 'assist/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    {% for section in sections %}
+        <div class="section">
+            <div class="date">
+                {{ section.published_date }}
+            </div>
+            <h1><a href="{% url 'doc_detail' pk=section.pk %}">{{ section.title }}</a></h1>
+
+            
+            <p>{{ section.text|safe }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

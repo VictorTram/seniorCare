@@ -1,0 +1,20 @@
+{% extends 'assist/base.html' %}
+
+{% block content %}
+    <div class="section">
+        
+        <a class="btn btn-default" href="{% url 'doc_edit' pk=section.pk %}">
+        	<button type="button">
+        		Edit
+        	</button>
+        </a>
+
+        <h1>{{ section.title }}</h1>
+        <div id="data-container">
+        	<p>{{ section.text|safe }}</p>
+        </div>
+        
+        
+
+    </div>
+{% endblock %}

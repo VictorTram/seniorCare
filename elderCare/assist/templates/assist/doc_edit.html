@@ -1,0 +1,15 @@
+{% extends 'assist/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <h1>New post</h1>
+    
+    {{ form.media }}
+	<form  method="post" action='' enctype="multipart/form-data">
+	    {% csrf_token %}
+	    {{ form.as_p  }}
+	    <input class="button" type="submit" value="Save">
+	</form>
+	  
+{% endblock %}
